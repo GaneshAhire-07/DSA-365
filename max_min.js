@@ -17,8 +17,8 @@ function min(A) {
   return min;
 }
 function main() {
-  const A = [99, 45, 1, 23, 30, 100, 8, 67];
-  console.log("Max element is: " + max(A));
-  console.log("Min element is: " + min(A));
+  const A = [21, 45, 72, 1, 35, 96, 100, 5, 88];
+  console.log("Largest element is " + max(A));
+  console.log("Smallest element is " + min(A));
 }
 main();

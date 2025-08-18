@@ -1,6 +1,6 @@
 function revArr(A) {
   let left = 0;
-  let right = A.length - 1;
+  right = A.length - 1;
   while (left < right) {
     let temp = A[left];
     A[left] = A[right];
@@ -11,9 +11,9 @@ function revArr(A) {
   return A;
 }
 function main() {
-  let A = [12, 35, 75, 89, 100, 65, 48, 33];
+  let A = [11, 25, 13, 18, 17, 19, 20, 25];
   A = revArr(A);
-  console.log("Reverse Array is ");
+  console.log("Reverse array is ");
   console.log(A.join(" "));
 }
 main();

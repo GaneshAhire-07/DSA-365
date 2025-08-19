@@ -1,8 +1,8 @@
-function maxArray(nums) {
-  let maxi = nums[0];
+function maxArr(A) {
+  let maxi = A[0];
   let sum = 0;
-  for (let i = 0; i < nums.length; i++) {
-    sum = sum + nums[i];
+  for (let i = 0; i < A.length; i++) {
+    sum += A[i];
     if (sum > maxi) {
       maxi = sum;
     }
@@ -13,6 +13,7 @@ function maxArray(nums) {
   return maxi;
 }
 function main() {
-  console.log(maxArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+  const A = [-1, 2, -3, 4, -5, 8, -9];
+  console.log(maxArr(A));
 }
 main();

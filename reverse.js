@@ -1,19 +1,19 @@
-function reverse(A){
-  let left=0;
-  let right=A.length-1;
-  while(left<right){
-    let temp=A[left];
-    A[left]=A[right];
-    A[right]=temp;
+function reverse(A) {
+  let left = 0,
+    right = A.length - 1;
+  while (left < right) {
+    let temp = A[left];
+    A[left] = A[right];
+    A[right] = temp;
     left++;
     right--;
   }
   return A;
 }
-function main(){
-  let A=[12,25,43,78,3,65,77,99];
-  A=reverse(A);
-  console.log("Reverse Array is ")
+function main() {
+  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  A = reverse(A);
+  console.log("Reverse Array is ");
   console.log(A.join(" "));
 }
 main();

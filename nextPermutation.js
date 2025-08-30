@@ -1,43 +1,43 @@
-function nextPermutation(nums) {
+function nextPermutation(A) {
   let ind1 = -1;
   let ind2 = -1;
-  for (let i = nums.length - 2; i >= 0; i--) {
-    if (nums[i] < nums[i + 1]) {
+  for (let i = A.length - 2; i >= 0; i--) {
+    if (A[i] < A[i + 1]) {
       ind1 = i;
       break;
     }
   }
-  if (ind1 === -1) {
-    reverse(nums, 0);
+  if (ind1 == -1) {
+    reverse(A, 0);
+    return A;
   } else {
-    for (let i = nums.length - 1; i >= 0; i--) {
-      if (nums[i] > nums[ind1]) {
+    for (let i = A.length - 1; i >= 0; i--) {
+      if (A[i] > A[ind1]) {
         ind2 = i;
         break;
       }
     }
-    swap(nums, ind1, ind2);
-    reverse(nums, ind1 + 1);
+    swap(A, ind1, ind2);
+    reverse(A, ind1 + 1);
   }
-  return nums;
+  return A;
 }
-function swap(arr, i, j) {
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
+function swap(A, i, j) {
+  let temp = A[i];
+  A[i] = A[j];
+  A[j] = temp;
 }
-function reverse(arr, start) {
+function reverse(A, start) {
   let i = start;
-  let j = arr.length - 1;
+  let j = A.length - 1;
   while (i < j) {
-    swap(arr, i, j);
+    swap(A, i, j);
     i++;
     j--;
   }
 }
 function main() {
-  let nums = [1, 2, 3];
-  console.log("Next Permutation is ");
-  console.log(nextPermutation(nums));
+  let A = [1, 2, 3];
+  console.log(nextPermutation(A));
 }
 main();

@@ -1,19 +1,18 @@
 function reverse(A) {
-  let left = 0,
-    right = A.length - 1;
-  while (left < right) {
-    let temp = A[left];
-    A[left] = A[right];
-    A[right] = temp;
-    left++;
-    right--;
+  let l = 0,
+    r = A.length - 1;
+  while (l < r) {
+    let temp = A[l];
+    A[l] = A[r];
+    A[r] = temp;
+    l++;
+    r--;
   }
   return A;
 }
 function main() {
   let A = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  A = reverse(A);
-  console.log("Reverse Array is ");
-  console.log(A.join(" "));
+  console.log("Reverse array is ");
+  console.log(reverse(A));
 }
 main();

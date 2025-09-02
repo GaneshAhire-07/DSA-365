@@ -10,15 +10,15 @@ function sort(A) {
   }
   return A;
 }
-function Kthlarge(A, k) {
+function kthlarge(A, k) {
   sort(A);
   for (let i = 0; i < A.length; i++) {
-    if (k == i + 1) return A[i];
+    if (i + 1 == k) return A[i];
   }
 }
 function main() {
-  let A = [1, 2, 3, 4, 15, 32, 99, 5, 6, 7];
-  let k = 5;
-  console.log(Kthlarge(A, k));
+  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let k = 2;
+  console.log(kthlarge(A, k));
 }
 main();

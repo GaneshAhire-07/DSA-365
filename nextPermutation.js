@@ -22,11 +22,6 @@ function nextPermutation(A) {
   }
   return A;
 }
-function swap(A, i, j) {
-  let temp = A[i];
-  A[i] = A[j];
-  A[j] = temp;
-}
 function reverse(A, start) {
   let i = start;
   let j = A.length - 1;
@@ -35,6 +30,11 @@ function reverse(A, start) {
     i++;
     j--;
   }
+}
+function swap(A, i, j) {
+  let temp = A[i];
+  A[i] = A[j];
+  A[j] = temp;
 }
 function main() {
   let A = [1, 2, 3];

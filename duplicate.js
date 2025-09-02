@@ -7,6 +7,7 @@ function duplicate(A) {
   return false;
 }
 function main() {
-  let A = [1, 2, 3, 4, 1];
+  let A = [1, 2, 3, 4, 5];
   console.log(duplicate(A));
 }
+main();

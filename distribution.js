@@ -11,16 +11,18 @@ function sort(A) {
   return A;
 }
 function distribution(A, m) {
-  sort(A)
+  console.log(sort(A));
   let result = A[m - 1] - A[0];
   for (let i = 1; m - 1 + i < A.length; i++) {
     let diff = A[m - 1 + i] - A[i];
-    if (diff < result) result = diff;
+    if (diff < result) {
+      result = diff;
+    }
   }
   return result;
 }
 function main() {
-  let A = [11, 2, 23, 4, 15, 16, 7, 18, 9, 100];
+  let A = [1, 6, 7, 2, 9, 41, 14, 20, 35, 60];
   let m = 3;
   console.log(distribution(A, m));
 }

@@ -1,4 +1,4 @@
-function nextPermutation(A) {
+function nextPermution(A) {
   let ind1 = -1;
   let ind2 = -1;
   for (let i = A.length - 2; i >= 0; i--) {
@@ -38,6 +38,6 @@ function swap(A, i, j) {
 }
 function main() {
   let A = [1, 2, 3];
-  console.log(nextPermutation(A));
+  console.log(nextPermution(A));
 }
 main();

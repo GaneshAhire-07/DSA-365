@@ -13,12 +13,14 @@ function sort(A) {
 function kthlarge(A, k) {
   sort(A);
   for (let i = 0; i < A.length; i++) {
-    if (i + 1 == k) return A[i];
+    if (i + 1 == k) {
+      return A[i];
+    }
   }
 }
 function main() {
   let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  let k = 2;
+  let k = 4;
   console.log(kthlarge(A, k));
 }
 main();

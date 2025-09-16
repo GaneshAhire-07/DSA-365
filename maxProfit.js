@@ -1,6 +1,6 @@
 function maxProfit(A) {
-  let profit = 0,
-    buy = A[0];
+  let buy = A[0],
+    profit = 0;
   for (let i = 1; i < A.length; i++) {
     if (A[i] < buy) {
       buy = A[i];
@@ -12,7 +12,7 @@ function maxProfit(A) {
   return profit;
 }
 function main() {
-  let A = [11, 2, 3, 4, 5, 6, 10, 7, 8, 9, 50];
+  let A = [1, 2, 3, 4, 5, 6, 7, 10];
   console.log(maxProfit(A));
 }
 main();

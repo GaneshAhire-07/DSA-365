@@ -1,6 +1,6 @@
 function max(A) {
   let max = A[0];
-  for (let i = 1; i < A.length; i++) {
+  for (let i = 0; i < A.length; i++) {
     if (A[i] > max) {
       max = A[i];
     }
@@ -9,7 +9,7 @@ function max(A) {
 }
 function min(A) {
   let min = A[0];
-  for (let i = 1; i < A.length; i++) {
+  for (let i = 0; i < A.length; i++) {
     if (A[i] < min) {
       min = A[i];
     }

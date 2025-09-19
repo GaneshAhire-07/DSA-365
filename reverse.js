@@ -11,7 +11,7 @@ function reverse(A) {
   return A;
 }
 function main() {
-  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 40];
   console.log(reverse(A));
 }
 main();

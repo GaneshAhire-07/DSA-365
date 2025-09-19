@@ -13,7 +13,7 @@ function maxArray(A) {
   return max;
 }
 function main() {
-  let A = [1, 2, 3, -5, 6, -10, 50];
+  let A = [1, 2, 3, -4, -5, -6, 10, -20];
   console.log(maxArray(A));
 }
 main();

@@ -7,15 +7,19 @@ function repeatmiss(A) {
     let num = A[i];
     count[num]++;
   }
-  let repeat, miss;
+  let miss, repeat;
   for (let i = 1; i < count.length; i++) {
-    if (count[i] == 0) miss = i;
-    if (count[i] == 2) repeat = i;
+    if (count[i] == 0) {
+      miss = i;
+    }
+    if (count[i] == 2) {
+      repeat = i;
+    }
   }
   return [repeat, miss];
 }
 function main() {
-  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2];
+  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 5];
   console.log(repeatmiss(A));
 }
 main();

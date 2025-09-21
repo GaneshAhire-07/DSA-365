@@ -1,16 +1,16 @@
-function palindrome(a) {
+function palindrom(n) {
+  let temp = n;
   let b = 0;
   let c;
-  let temp = a;
   while (temp > 0) {
     c = temp % 10;
     b = b * 10 + c;
     temp = Math.floor(temp / 10);
   }
-  return b == a;
+  return n == b;
 }
 function main() {
-  let a = 121;
-  console.log(palindrome(a));
+  let n = 1213;
+  console.log(palindrom(n));
 }
 main();

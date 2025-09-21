@@ -18,7 +18,7 @@ function min(A) {
 }
 function main() {
   let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  console.log("Maximum elt is " + max(A));
-  console.log("Minimum elt is " + min(A));
+  console.log("Max " + max(A));
+  console.log("Min " + min(A));
 }
 main();

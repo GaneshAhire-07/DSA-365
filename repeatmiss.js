@@ -1,25 +1,28 @@
 function repeatmiss(A) {
   let count = [];
   for (let i = 0; i <= A.length; i++) {
-    count[i] = 0;
+    count[i] = 0; // सुरुवातीला सर्व 0
   }
+
   for (let i = 0; i < A.length; i++) {
     let num = A[i];
     count[num]++;
   }
-  let miss, repeat;
+
+  let repeat, miss;
   for (let i = 1; i < count.length; i++) {
-    if (count[i] == 0) {
-      miss = i;
-    }
     if (count[i] == 2) {
       repeat = i;
+    }
+    if (count[i] == 0) {
+      miss = i;
     }
   }
   return [repeat, miss];
 }
+
 function main() {
-  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 5];
-  console.log(repeatmiss(A));
+  let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 4];
+  console.log(repeatmiss(A)); // [4, 10]
 }
 main();

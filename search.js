@@ -16,7 +16,7 @@ function search(A, key) {
 }
 function main() {
   let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  let key = 6;
+  let key = 5;
   console.log(search(A, key));
 }
 main();

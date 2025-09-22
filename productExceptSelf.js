@@ -3,10 +3,10 @@ function productExceptSelf(A) {
   for (let i = 0; i < A.length; i++) {
     ans[i] = 1;
   }
-  let preffix = 1;
+  let prefix = 1;
   for (let i = 0; i < A.length; i++) {
-    ans[i] = preffix;
-    preffix = preffix * A[i];
+    ans[i] = prefix;
+    prefix = prefix * A[i];
   }
   let suffix = 1;
   for (let i = A.length - 1; i >= 0; i--) {

@@ -11,7 +11,7 @@ function sort(A) {
   return A;
 }
 function kthlarge(A, k) {
-  console.log(sort(A));
+  sort(A);
   for (let i = 0; i < A.length; i++) {
     if (i + 1 == k) {
       return A[i];

@@ -11,7 +11,7 @@ function sort(A) {
   return A;
 }
 function distribution(A, m) {
-  console.log(sort(A));
+  sort(A);
   let result = A[m - 1] - A[0];
   for (let i = 1; m - 1 + i < A.length; i++) {
     let diff = A[m - 1 + i] - A[i];
@@ -22,7 +22,7 @@ function distribution(A, m) {
   return result;
 }
 function main() {
-  let A = [1, 5, 9, 7, 3, 4, 6];
+  let A = [1, 3, 5, 7, 9, 11];
   let m = 3;
   console.log(distribution(A, m));
 }

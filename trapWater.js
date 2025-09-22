@@ -1,8 +1,8 @@
 function trapWater(A) {
   let left = 0,
     right = A.length - 1;
-  let leftMax = A[left],
-    rightMax = A[right];
+  let leftMax = A[left];
+  let rightMax = A[right];
   let water = 0;
   while (left < right) {
     if (leftMax < rightMax) {

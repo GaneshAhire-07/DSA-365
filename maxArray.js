@@ -1,19 +1,18 @@
-function maxArray(A) {
-  let sum = 0,
-    max = A[0];
-  for (let i = 0; i < A.length; i++) {
-    sum += A[i];
-    if (sum > max) {
-      max = sum;
+function maxArray(A){
+  let sum=0,max=A[0];
+  for(let i=0;i<A.length;i++){
+    sum+=A[i];
+    if(sum>max){
+      max=sum;
     }
-    if (sum < 0) {
-      sum = 0;
+    if(sum<0){
+      sum=0;
     }
   }
-  return max;
+  return sum;
 }
-function main() {
-  let A = [10, -2, 3, -5, 11, -8, 9];
-  console.log(maxArray(A));
+function main(){
+let A=[-1,2,3,-4,5,-6,7,-8,9,10];
+console.log(maxArray(A));
 }
 main();
